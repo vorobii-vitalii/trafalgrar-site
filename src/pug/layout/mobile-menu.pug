@@ -1,0 +1,9 @@
+mixin menuOption(text, position) 
+    li(class='menu__block_list-item')
+        a(href="#")=text
+
+.menu__block
+    .container
+        ul.menu__block_list
+            each option, index in headerMenuOptions
+                +menuOption(option, index)

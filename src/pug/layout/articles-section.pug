@@ -1,0 +1,33 @@
+-
+    const articleSectionTitle = 'Check out our latest article'
+    const articleExamples = [
+        {image: 'static/img/article_1.png', title: 'Disease detection, check up in the laboratory', text: 'In this case, the role of the health laboratory is very important to doa disease detection...'},
+        {image: 'static/img/article_2.png', title: 'Herbal medicines that are safe for consumption', text: 'Herbal medicine is very widely used at this time because of its very good for your health...'},
+        {image: 'static/img/article_3.png', title: 'Natural care for healthy facial skin', text: 'A healthy lifestyle should start from now and also for your skin health.There are some...'},
+    ]
+
+mixin putArticle(article)
+    .article-section__item
+        img(class="article-section__article-image" src=article.image)
+        .article-section__article-content
+            h4.article-section__article-title=article.title
+            p.article-section__article-text=article.text
+            a.article-section__article-read-more
+                span Read more
+                img(src="static/img/read-more.svg")
+
+section.articles-section
+    .container
+        .articles-section__row
+            .articles-bubble-figure
+                img(src="static/img/bubble_articles.png")
+            .articles-figure1
+                img(src="static/img/articles_figure.png")
+            .articles-figure2
+                img(src="static/img/articles_figure.png")
+            h2.articles-section__title=articleSectionTitle
+            hr.articles-section__divider
+            .articles-section__items
+                each article in articleExamples
+                    +putArticle(article)
+            button.button-outline-blue.article-section__view-all View all

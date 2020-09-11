@@ -1,0 +1,16 @@
+- const welcomeTitle = 'Virtual healthcare for you'
+- const welcomeText = 'Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone'
+- const welcomeButtonText = 'Consult Today'
+
+main.welcome-section
+    .container
+        .welcome-section__row
+            .welcome-floating-dots
+                img(src="static/img/dots-welcome-section.png", alt="")
+            .welcome__info
+                .welcome__content
+                    h1.welcome__title= welcomeTitle
+                    p.welcome__text= welcomeText
+                    button.welcome__button= welcomeButtonText
+            .welcome__illustration
+                img(src="static/img/welcome-illustration.png", alt="Welcome")

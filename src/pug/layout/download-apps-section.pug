@@ -1,0 +1,17 @@
+-
+    const downloadAppsTitle = 'Download our mobile apps'
+    const downlaodAppsText = 'Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely'
+    const downloadAppsBtnText = 'Download'
+
+section.download-apps-section
+    .container
+        .download-apps-section__row
+            .download-apps-section__info
+                h2.download-apps-section__title=downloadAppsTitle
+                hr.download-apps-section__divider
+                p.download-apps-section__text=downlaodAppsText
+                button.button-outline-blue.download-apps-section__btn
+                    span=downloadAppsBtnText
+                    img(src="static/img/arrow.svg")
+            .download-apps-section__image
+                img(src="static/img/download-apps.png", alt="Download our apps")

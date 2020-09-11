@@ -1,0 +1,49 @@
+-
+    const footerText = 'Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone'
+    const copyrightText = '©Trafalgar PTY LTD 2020. All rights reserved'
+
+footer.footer
+    .container
+        .footer__row
+            .footer-element
+                img(src="static/img/footer-element.svg")
+            .footer__company-info
+                .footer__company-name
+                    img(src="static/img/brand-footer.png")
+                    span=brandName
+                p.footer__company-summary=footerText
+                p.footer__copyright-text=copyrightText
+            .footer__block_links
+                ul.footer__options-list.footer__company-options
+                    li.footer__option.footer__option-header 
+                        a(href="#") Company
+                    li.footer__option 
+                        a(href="#") About
+                    li.footer__option 
+                        a(href="#") Testimonials
+                    li.footer__option 
+                        a(href="#") Find a doctor
+                    li.footer__option 
+                        a(href="#") Apps
+                ul.footer__options-list.footer__region-options
+                    li.footer__option.footer__option-header 
+                        a(href="#") Region
+                    li.footer__option 
+                        a(href="#") Indonesia
+                    li.footer__option 
+                        a(href="#") Singapore
+                    li.footer__option 
+                        a(href="#") Hongkong
+                    li.footer__option 
+                        a(href="#") Canada
+                ul.footer__options-list.footer__help-options
+                    li.footer__option.footer__option-header 
+                        a(href="#") Help
+                    li.footer__option 
+                        a(href="#") Help center
+                    li.footer__option 
+                        a(href="#") Contact support
+                    li.footer__option 
+                        a(href="#") Instructions
+                    li.footer__option 
+                        a(href="#") How it works

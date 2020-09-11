@@ -1,0 +1,99 @@
+header.header
+    background #FFF
+
+.header__row
+    display flex
+    flex-direction row
+    align-items center
+    justify-content space-between
+    padding-top 68px
+    padding-right 163px
+    padding-left 224px
+
+@media (max-width 1350px)
+    .header__row
+        padding-left 120px
+        padding-top 30px
+        padding-right 120px
+
+@media (max-width 1150px)
+    .header__row
+        padding-left 60px
+        padding-right 60px
+
+@media (max-width 1000px)
+    .header__row
+        padding-left 30px
+        padding-right 30px
+
+@media (max-width 350px)
+    .header__row
+        padding-left 15px
+        padding-right 15px
+        padding-top 15px
+
+.header__logo
+    display flex
+    flex-direction row
+    justify-content flex-start
+    align-items center
+
+.header__brand-logo
+    margin-right 12px
+
+.header__brand-name
+    font-style normal
+    font-weight bold;
+    font-size 24px;
+    line-height 30px;
+    color #233348
+    mix-blend-mode normal
+
+ul.header__menu
+    display flex
+    flex-direction row
+    justify-content flex-start
+    align-items center
+    font-style normal
+    font-weight normal
+    font-size 18px;
+    line-height 23px;
+    color #1F1534;
+    list-style-type none
+
+    .header__menu-item
+
+        a
+            outline none
+            text-decoration none
+            color inherit
+
+        opacity 0.5
+        margin-right 40px
+
+        &:last-child
+            margin-right 0
+
+    .header__menu-item-first
+        opacity 1
+        font-weight bold
+
+@media (max-width 850px)
+    ul.header__menu
+        display none
+
+button.header__menu-btn
+    display none
+    z-index 3
+    outline none
+    border none
+    width 48px
+    height 48px
+    background url('../img/menu-icon.svg') center no-repeat
+
+    &.active
+        background url('../img/menu-icon-active.svg') center no-repeat
+
+@media (max-width 850px)
+    button.header__menu-btn
+        display block

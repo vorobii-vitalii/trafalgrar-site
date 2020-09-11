@@ -1,0 +1,28 @@
+- const brandName = 'Trafalgar'
+- const headerMenuOptions = ['Home', 'Find a doctor', 'Apps', 'Testimonials', 'About us'];
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="static/css/style.css")
+        link(rel="stylesheet", href="static/fonts/style.css")
+        title= brandName
+    body
+        .wrapper
+
+            include ../layout/mobile-menu.pug
+
+            .content
+                include ../layout/header.pug
+                include ../layout/welcome-section.pug
+                include ../layout/services-section.pug
+                include ../layout/leading-providers-section.pug
+                include ../layout/download-apps-section.pug
+                include ../layout/customer-reviews-section.pug
+                include ../layout/articles-section.pug
+                include ../layout/footer.pug
+            //
+
+    script(src="static/js/script.js")

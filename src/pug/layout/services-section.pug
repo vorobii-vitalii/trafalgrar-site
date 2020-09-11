@@ -1,0 +1,60 @@
+- 
+    const servicesTitle = 'Our services';
+    const servicesText =
+    'We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health';
+    const servicesList = [
+    {
+        title: 'Search doctor',
+        image: 'static/img/search-doctor.svg',
+        text: 'Choose your doctor from thousands of specialist, general, and trusted hospitals',
+    },
+    {
+        title: 'Online pharmacy',
+        image: 'static/img/online-pharmacy.svg',
+        text: 'Buy  your medicines with our mobile application with a simple delivery system',
+    },
+    {
+        title: 'Consultation',
+        image: 'static/img/consultation.svg',
+        text: 'Free consultation with our trusted doctors and get the best recomendations',
+    },
+    {
+        title: 'Details info',
+        image: 'static/img/details-info.svg',
+        text: 'Free consultation with our trusted doctors and get the best recomendations',
+    },
+    {
+        title: 'Emergency care',
+        image: 'static/img/emergency-care.svg',
+        text: 'You can get 24/7 urgent care for yourself or your children and your lovely family',
+    },
+    {
+        title: 'Tracking',
+        image: 'static/img/tracking.svg',
+        text: 'Track and save your medical history and health data ',
+    },
+    ];
+    const servicesLearnMore = 'Learn More';
+
+
+mixin serviceItem(service)
+    .services__list-item
+        .services__list-item__img
+            img(src=service.image alt="")
+        h4.service__list-item__header=service.title
+        p.service__list-item__text=service.text
+
+
+
+
+section.services-section
+    .container
+        .services-section__row
+            h2.services__title=servicesTitle
+            hr.services__line
+            p.services__text=servicesText
+            .services__list
+                each service in servicesList
+                    +serviceItem(service)
+            button.button-outline-blue.services-learn-more=servicesLearnMore
+

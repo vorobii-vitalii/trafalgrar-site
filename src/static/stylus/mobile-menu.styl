@@ -1,0 +1,58 @@
+.menu__block
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%)
+    position fixed
+    display none
+    overflow hidden
+    min-height 100vh
+    width 100%
+    z-index 2
+    animation-name fadeOut
+    animation-duration 1s
+
+    &.active
+        display block
+        animation-name fadeIn
+        animation-duration 1s
+
+@keyframes fadeIn
+  for i in 0..10
+    {10% * i}
+      opacity (i/10)
+
+@keyframes fadeOut
+  for i in 10..0
+    {10% * i}
+      opacity (i/10)
+
+ul.menu__block_list
+    margin 0
+    min-height 100vh
+    padding 120px 60px 60px 60px
+    display flex
+    flex-direction column
+    align-items center
+    list-style-type none
+    justify-content center
+
+    li.menu__block_list-item
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 133%
+        color: #FFFFFF;
+        margin-bottom 30px
+
+        @media (max-width 390px)
+          margin-bottom 15px
+
+        a
+            outline none
+            color inherit
+            text-decoration none
+
+        &:last-child
+            margin-bottom 0
+
+@media (max-width 390px)
+  ul.menu__block_list
+    padding: 75px 30px 30px;

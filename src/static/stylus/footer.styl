@@ -1,0 +1,149 @@
+footer.footer
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+
+.footer__row
+    display flex
+    flex-direction row
+    position relative
+    align-items flex-start
+    padding 118px 0 113px 190px
+
+    @media (max-width 1600px)
+        padding-left 50px
+        padding-right 50px
+        padding-top 100px
+        padding-bottom 100px
+
+    @media (max-width 1200px)
+        padding-bottom 50px
+
+    @media (max-width 1050px)
+        padding-top 50px
+        padding-bottom 50px
+        flex-direction column-reverse
+    
+    @media (max-width 420px)
+        padding-left 25px
+        padding-right 25px
+        padding-top 50px
+        padding-bottom 50px
+
+.footer-element
+    position absolute
+    bottom 0
+    left 0
+
+    @media (max-width 1600px)
+        display none
+
+    img 
+        object-position 0 0 
+
+.footer__company-info
+    display flex
+    flex-direction column
+    max-width 391px
+    margin-right 145px
+
+    @media (max-width 1300px)
+        margin-right 50px
+
+    @media (max-width 1050px)
+        margin-top 50px
+
+.footer__company-name
+    display flex
+    flex-direction row
+    align-items center
+    justify-content flex-start
+
+    img
+        display block
+        margin-right 12px
+
+    span
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+
+p.footer__company-summary
+    margin 0
+    padding 17px 0 31px 0
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 156%
+    color: #FFFFFF;
+
+p.footer__copyright-text
+    margin 0
+    padding 0
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 175%
+    color: #FFFFFF;
+
+
+.footer__block_links
+    display flex
+    flex-direction row
+
+    @media (max-width 1300px)
+        display grid
+        grid-template-columns repeat(3, 1fr)
+        grid-gap 50px
+
+
+    @media (max-width 1050px)
+        grid-template-columns repeat(3, 1fr)
+
+    @media (max-width 580px)
+        grid-template-columns repeat(2, 1fr)
+
+    @media (max-width 420px)
+        grid-template-columns repeat(1, 1fr)
+
+
+ul.footer__options-list
+    margin 0
+    padding 0
+    display flex
+    flex-direction column
+    list-style-type none
+
+    > li.footer__option
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 211%
+        color: #FFFFFF
+        margin 0
+        padding 0
+
+        a
+            text-decoration none
+            outline none
+            color inherit
+
+        &.footer__option-header
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 300%
+            padding-bottom 2px
+
+
+    &.footer__company-options
+        margin-right 157px
+
+        @media (max-width 1300px)
+            margin-right 0
+
+    &.footer__region-options
+        margin-right 143px
+
+        @media (max-width 1300px)
+            margin-right 0

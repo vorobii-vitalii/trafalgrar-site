@@ -1,0 +1,138 @@
+section.services-section
+    background-color #fff
+
+.services-section__row
+    display flex
+    background url('../img/services-bg-element.png') 0 0 no-repeat
+    flex-direction column
+    align-items center
+    padding-right 240px
+    padding-left 240px
+    padding-bottom 220px
+
+@media (max-width 1600px)
+    .services-section__row
+        padding-left 0
+        padding-right 0
+
+@media (max-width 1500px)
+    .services-section__row
+        padding-bottom 120px
+
+@media (max-width 1200px)
+    .services-section__row
+        background none
+        padding-bottom 50px
+
+h2.services__title
+    font-style normal
+    font-weight bold
+    font-size 36px
+    line-height 156%
+    color #000000;
+    padding 0 0 26px 0
+    margin 0
+    text-align center
+
+hr.services__line
+    display block
+    width 56px
+    height 2px
+    left 772px
+    top 1049px
+    background #000000;
+    border-radius 5px
+    margin 0 0 33px 0
+
+
+p.services__text
+    max-width 952px
+    font-style normal
+    font-weight 300
+    font-size 18px
+    line-height 167%
+    text-align center
+    color #7D7987
+    margin-top 0
+    margin-bottom 80px
+
+@media (max-width 1200px)
+    p.services__text
+        margin-bottom 50px
+
+@media (max-width 1000px)
+    p.services__text
+        padding 0 50px 0 50px
+    
+@media (max-width 750px)
+    p.services__text
+        padding 0 25px 0 25px
+
+@media (max-width 410px)
+    p.services__text
+        padding 0 15px 0 15px
+
+.services__list
+    display grid
+    grid-template-columns repeat(3, 350px)
+    grid-column-gap 34px
+    grid-row-gap 37px
+    align-items: stretch;
+    justify-content center
+
+@media (max-width 1200px)
+    .services__list
+        grid-template-columns repeat(2, 350px)
+
+@media (max-width 780px)
+    .services__list
+        grid-template-columns repeat(1, 350px)
+
+@media (max-width 393px)
+    .services__list
+        grid-template-columns 80%
+
+.services__list-item
+    display flex
+    flex-direction column
+    align-items flex-start
+    padding 58px 52px 47px 36px
+    background #FFFFFF
+    box-shadow 10px 40px 50px rgba(229, 233, 246, 0.4)
+    border-radius 20px
+
+    .services__list-item__img
+        height 120px
+        margin-bottom 20px
+
+    h4.service__list-item__header
+        font-style normal
+        font-weight bold;
+        font-size 24px;
+        line-height 233%
+        color #000000
+        padding 0
+        margin 0 0 0.59px 0
+
+    p.service__list-item__text
+        font-style normal
+        font-weight 300
+        font-size 16px
+        line-height 175% 
+        color #7D7987
+        margin 0
+
+
+@media (max-width 780px)
+    .services__list-item
+        padding: 50px 20px;
+
+@media (max-width 335px)
+    .services__list-item
+        padding: 25px 20px;
+
+        .services__list-item__img
+            margin-bottom 0
+
+button.services-learn-more
+    margin-top 72px

@@ -1,0 +1,16 @@
+mixin headerItem(text, position) 
+    li(class='header__menu-item ' + (position == 0 ? 'header__menu-item-first' : ''))
+        a(href="#")=text
+
+header.header
+    .container
+        .header__row
+            .header__logo
+                .header__brand-logo
+                    img(src="static/img/brand-header.svg", alt="Brand logo")
+                .header__brand-name
+                    span= brandName
+            button.header__menu-btn
+            ul.header__menu
+                each option, index in headerMenuOptions
+                    +headerItem(option, index)

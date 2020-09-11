@@ -1,0 +1,17 @@
+-
+    const leadingProvidersTitle = 'Leading healthcare providers';
+    const leadingProvidersText = 'Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver'
+    const leadingProvidersBtnText = 'Learn More';
+
+section.leading-providers-section
+    .container
+        .leading-providers__row
+            .leading-providers__figure
+                img(src="static/img/figure-leading-providers.png", alt="")
+            .leading-providers__image
+                img(src="static/img/leading-providers-image.png", alt="")
+            .leading-providers__info
+                h2.leading-providers__title=leadingProvidersTitle
+                hr.leading-providers__divider
+                p.leading-providers__text=leadingProvidersText
+                button.button-outline-blue.leading-providers__learn-more=leadingProvidersBtnText

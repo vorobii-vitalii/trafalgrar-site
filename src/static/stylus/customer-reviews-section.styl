@@ -1,0 +1,207 @@
+section.customer-reviews-section
+    background-color #fff
+
+.customer-reviews-section__row
+    display flex
+    flex-direction column
+    align-items center
+    padding 0 238px 216px 242px
+
+    @media (max-width 1600px)
+        padding 0 0 216px 0
+
+    @media (max-width 1500px)
+        padding-bottom 90px
+
+    @media (max-width 1200px)
+        padding-bottom 50px
+
+.customer-reviews-section__info
+    display flex
+    flex-direction column
+    align-items center
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px
+    padding 64px 118px 79px 118px
+    position relative
+
+    @media (max-width 1200px)
+        padding 50px
+
+    @media (max-width 635px)
+        padding 50px 25px 50px 25px
+
+    @media (max-width 450px)
+        padding 25px
+
+.customer-reviews__decoration_1
+    position: absolute;
+    top: -1px;
+    right: -52px
+
+    img 
+        object-position -58px -18px
+
+.customer-reviews__decoration_2
+    position: absolute;
+    bottom 42px
+    left -45px
+
+    img 
+        object-position: -90px -18px;
+
+h2.customer-reviews-section__title
+    padding 0 0 25px 0
+    margin 0
+    font-style: normal
+    font-weight: bold
+    text-align: center;
+    font-size: 36px
+    line-height: 133%
+    color: #FFFFFF
+
+    @media (max-width 550px)
+        font-size 28px
+
+hr.customer-reviews-section__divider
+    display block
+    margin 0
+    padding 0
+    width: 56px
+    height: 2px
+    background: #FFFFFF
+    border-radius: 6px
+
+.customer-reviews-section__content
+    display flex
+    flex-direction row
+    padding-top 66px
+    align-items center
+    flex-wrap wrap
+
+    @media (max-width 1000px)
+        padding-top: 30px;
+
+.customer-reviews-section__customer-image
+    border 4px solid #fff
+    width 144px
+    height 144px
+    border-radius 50%
+    margin-right 29px
+
+    @media (max-width 1000px)
+        order 2
+
+    img
+        object-position: -1px -1px;
+        display: block;
+        width: 138px;
+        height: 137px;
+
+.customer-reviews-section__customer-info
+    display flex
+    flex-direction column
+    justify-content center
+    align-self flex-start
+    padding-top 22px
+    align-items flex-start
+
+    @media (max-width 1000px)
+        order 3
+
+    h4
+        padding 0
+        margin 0
+
+h4.customer-reviews-section__customer-name
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 218% 
+    color: #FFFFFF;
+
+h4.customer-reviews-section__customer-position
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 267%
+    color: rgba(255, 255, 255, 0.85);
+    padding 0 110px 0 0
+    margin 0
+
+    @media (max-width 1000px)
+        padding 0
+
+p.customer-reviews-section__customer-phrase
+    max-width 420px
+    padding 0
+    margin 0
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 158%
+    color: rgba(255, 255, 255, 0.9);
+
+    @media (max-width 1000px)
+        max-width 100%
+        order 1
+        padding-bottom 30px
+
+.customer-reviews-section__control
+    display inline-flex
+    align-self center
+    padding-top 39px
+    flex-direction row
+    align-items center
+
+
+button.arrow__next
+    display block
+    width 32px
+    height 20px
+    background url('../img/arrow-next-clients.png') 0 0  no-repeat
+    border 0
+    margin 0 0 0 90px
+    opacity: 0.4;
+    outline: none;
+
+    @media (max-width 400px)
+        margin 0 0 0 30px
+
+    &.active
+        opacity 1
+
+button.arrow__prev
+    display block
+    width 32px
+    height 20px
+    background url('../img/arrow-next-clients.png') 0 0  no-repeat
+    transform rotate(180deg)
+    border 0
+    margin 0 90px 0 0
+    opacity: 0.4;
+    outline: none;
+
+    @media (max-width 400px)
+        margin 0 30px 0 0
+
+    &.active
+        opacity 1
+
+button.circle
+    display block
+    width: 10px;
+    height: 10px;
+    border none
+    border-radius 50%
+    background: #5B9BF3;
+    opacity: 0.3;
+    margin-right 18px
+    padding 0
+    outline: none;
+
+    &.active
+        opacity 1
+
+    &:last-child
+        margin-right 0

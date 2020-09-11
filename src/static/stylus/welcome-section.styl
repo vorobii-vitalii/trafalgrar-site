@@ -1,0 +1,166 @@
+main.welcome-section
+    background #fff
+
+.welcome-section__row
+    display flex
+    position relative
+    flex-direction row
+    justify-content flex-start
+    align-items flex-start
+    padding-top 80px
+    padding-right 130px
+    padding-left 223px
+    padding-bottom 178px
+
+@media (max-width 1600px)
+    .welcome-section__row
+        padding-right 90px
+        padding-left 150px
+
+@media (max-width 1500px)
+    .welcome-section__row
+        padding-right 50px
+        padding-bottom 120px
+
+@media (max-width 1450px)
+    .welcome-section__row
+        padding-top 50px
+
+@media (max-width 1410px)
+    .welcome-section__row
+        padding-left 100px
+
+@media (max-width 1400px)
+    .welcome-section__row
+        padding-left 50px
+        align-items center
+        padding-bottom 50px
+
+@media (max-width 1000px)
+    .welcome-section__row
+        flex-direction column
+        padding-bottom 50px
+
+@media (max-width 480px)
+    .welcome-section__row
+        padding: 50px 25px 50px 25px;    
+
+@media (max-width 400px)
+    .welcome-section__row
+        padding: 50px 15px 50px 15px;   
+
+.welcome-floating-dots
+    position absolute
+    left 0
+    top 21px
+    
+    img 
+        object-position left -17px center
+
+@media (max-width 1400px)
+    .welcome-floating-dots
+        display none
+
+.welcome__info
+    padding-top 118px
+    padding-right 109px
+
+@media (max-width 1400px)
+    .welcome__info
+        padding-top 0
+
+@media (max-width 1050px)
+    .welcome__info
+        padding-right 50px
+
+@media (max-width 1000px)
+    .welcome__info
+        padding 0 0 50px 0
+
+.welcome__content
+    display flex
+    flex-direction column
+    align-items flex-start
+
+@media (max-width 700px)
+    .welcome__content
+        align-items center
+
+h1.welcome__title
+    font-style normal
+    font-weight bold
+    font-size 48px
+    line-height 1.17
+    color #000000
+    margin 0 0 25px 0
+
+@media (max-width 700px)
+    h1.welcome__title
+        text-align center
+        font-size 38px
+
+@media (max-width 555px)
+    h1.welcome__title
+        font-size 32px
+
+@media (max-width 430px)
+    h1.welcome__title
+        font-size: 30px;
+
+@media (max-width 400px)
+    h1.welcome__title
+        font-size: 28px;
+
+p.welcome__text
+    font-style normal
+    font-weight 300
+    font-size 21px
+    line-height 1.52
+    color #7D7987
+    margin 0 0 45px 0
+
+@media (max-width 700px)
+    p.welcome__text
+        text-align center
+
+@media (max-width 555px)
+    p.welcome__text
+        font-size 18px
+
+@media (max-width 410px)
+    p.welcome__text
+        margin-bottom 25px
+
+button.welcome__button
+    border none 
+    background #458FF6
+    color #fff
+    padding 1px 40px 2px 40px
+    border-radius 55px
+    font-style normal;
+    font-weight bold;
+    font-size 18px;
+    line-height 333%
+
+.welcome__illustration
+    flex-basis 693px
+
+    img 
+        display block
+
+
+@media (max-width 1400px)
+    .welcome__illustration
+        width 50%
+        flex-basis: 100%;
+
+        img 
+            width 100%
+
+@media (max-width 1050px)
+    .welcome__illustration
+        width 75%
+
+@media (max-width 500px)
+    .welcome__illustration
+        width 100%
